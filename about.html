@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>JiTOiL_Introduce</title>
-        <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
         <link rel="stylesheet" href ="style.css">
     </head>
     <body class = "about-desktop-page">
         <div class="desktop-area">
-            <button class = "desktop-icon">
+            <button class = "desktop-icon" onclick="openWindow('about-window')">
                 <img src="aboutme_icon.png" alt = "aboutme_icon">
                 <span> about_me </span>
             </button>
@@ -18,7 +18,30 @@
                 <span> contact_me </span>
             </button>
 
+            <div class="about-popup hidden" id="about-window">
+                <button class="popup-close" onclick="closeWindow('about-window')">X</button>
+                <img class="popup" src="aboutme_window.png" alt="about window">
+                <div class = "popup-content">
+                    <img class="JiTOiL" src="owner.gif" alt="JiTOiL_gif">
+                    <div class="about_text">
+                        <p>NAME : JiTOiL</p>
+                        <p>뭘봐</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
+        <script>
+            function openWindow(id)
+            {
+                document.getElementById(id).classList.remove("hidden");
+            }
+            function closeWindow(id)
+            {
+                document.getElementById(id).classList.add("hidden");
+            }
+        </script>
+
     </body>
 </html>
