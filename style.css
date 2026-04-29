@@ -59,3 +59,59 @@ nav a.nav-current
     pointer-events:none;
 }
 
+.about-desktop-page
+{
+    margin-top:0;
+    min-height: 100vh;
+}
+
+.desktop-area
+{
+    min-height: calc(100vh-60px);
+    padding:30px;
+    text-align:left;
+}
+
+.desktop-icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+
+    width : 90px;
+    margin-bottom:24px;
+
+    background: none;
+    border : none;
+    cursor : pointer;
+
+    font-family: 'Play', sans-serif;
+    color:#525ab6; 
+}
+
+.desktop-icon img
+{
+    width : 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.desktop-icon span
+{
+    font-size : 17px;
+}
+
+.about-desktop-page
+{
+    margin-top: 0;
+    min-height: 100vh;
+    background-color: #e5ffda;
+}
+
+.desktop-area
+{
+    padding: 30px;
+    text-align: left;
+}
+
