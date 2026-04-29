@@ -20,7 +20,7 @@ p
     margin-bottom:100px;
 }
 
-button
+.enter_button
 {
     padding: 16px 32px;
     font-family: 'Play',sans-serif;
@@ -118,3 +118,85 @@ nav a.nav-current
     text-align: left;
 }
 
+.hidden
+{
+    display:none;
+}
+
+.about-popup
+{
+    position:absolute;
+    top: 50px;
+    left:300px;
+    width:500px;
+    border:1px solid #525ab6;
+    z-index:10;
+
+}
+
+.popup
+{
+    width:100%;
+    display:block;
+}
+
+
+.popup-close
+{
+    position:absolute;
+    top:8px;
+    right:10px;
+    z-index: 20;
+
+    width:24px;
+    height:24px;
+
+    padding:0;
+    margin:0;
+    
+    font-size: 16px;
+    line-height: 1;
+    color:white;
+
+    background:#fc74fc;
+    border:3px solid white;
+    cursor:pointer
+}
+
+.popup-content
+{
+    position:absolute;
+    top:70px;
+    left:35px;
+    right:35px;
+    bottom:35px;
+
+    display : flex;
+    gap:24px;
+    align-items:center;
+}
+
+.JiTOiL
+{
+    position: relative;
+    width:210px;
+    max-height: 260px;
+    object-fit: contain;
+
+    margin-left:-12px;
+    top:-160px;
+}
+
+.about_text p
+{
+    color :#525ab6;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.25;
+    margin:0 0 6px 0;
+}
+
+.hidden{
+    display:none;
+}
