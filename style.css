@@ -1,0 +1,307 @@
+body
+{
+    background-color: #e5ffda;
+    color:#525ab6;
+    text-align: center;
+    margin-top:150px;
+    font-family:'Play', sans-serif;
+}
+
+h1
+{
+    font-size:100px;
+    margin-bottom:0px;
+}
+
+p
+{
+    font-size:32px;
+    margin-top:0px;
+    margin-bottom:100px;
+}
+
+.enter_button
+{
+    padding: 16px 32px;
+    font-family: 'Play',sans-serif;
+    font-size: 24px;
+    border: none;
+    background-color:#525ab6;
+    color:#f9c7f9;
+    cursor:pointer;
+}
+
+nav
+{
+    background-color:#e5ffda;
+    padding:15px;
+    text-align:center;
+}
+
+nav a,
+nav .nav-current
+{
+    color:#525ab6;
+    margin: 0 15px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+nav a:hover
+{
+    color: #f8a5f8;
+}
+
+nav a.nav-current
+{
+    opacity: 0.65;
+    cursor:default;    
+    pointer-events:none;
+}
+
+.about-desktop-page
+{
+    margin-top:0;
+    min-height: 100vh;
+}
+
+.desktop-area
+{
+    min-height: calc(100vh - 60px);
+    padding:30px;
+    text-align:left;
+    margin-top:30px !important;
+    margin-left:45px;
+}
+
+.desktop-icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+
+    width : 100px;
+    margin-bottom:24px;
+
+    background: none;
+    border : none;
+    cursor : pointer;
+
+    font-family: 'Play', sans-serif;
+    color:#525ab6; 
+}
+
+.desktop-icon img
+{
+    width : 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.desktop-icon span
+{
+    display: block;
+    margin-top: 6px;
+    font-size : 17px;
+}
+
+.about-desktop-page
+{
+    margin-top: 0;
+    min-height: 100vh;
+    background-color: #e5ffda;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.about-popup
+{
+    position:absolute;
+    top: clamp(70px, 9vh, 90px);
+    left:clamp(180px, 22vw, 350px);
+
+    width:min(500px, 78vw);
+    border:1px solid #525ab6;
+    z-index:10;
+    overflow: hidden;
+
+}
+
+.popup
+{
+    width:100%;
+    height: auto;
+    display:block;
+}
+
+
+.popup-close
+{
+    position:absolute;
+    top: 1.3%;
+    right:clamp(7px, 1vw, 10px);
+    z-index: 20;
+
+    width:clamp(18px, 2.2vw, 24px);
+    height:clamp(18px, 2.2vw, 24px);
+
+    padding:0;
+    margin:0;
+    
+    font-size: clamp(12px, 1.5vw, 16px);
+    font-weight: bold;
+    line-height: 1;
+    color:white;
+
+    background:#fc74fc;
+    border:3px solid white;
+    cursor:pointer
+}
+
+.popup-content
+{
+    position:absolute;
+    top:14%;
+    left:7%;
+    right:7%;
+    bottom:7%;
+
+    display : flex;
+    gap:clamp(12px, 3vw, 24px);
+    align-items:center;
+}
+
+.JiTOiL
+{
+    position: relative;
+    width:clamp(120px, 33vw, 210px);
+    max-height: 260px;
+    object-fit: contain;
+
+    margin-left:-2.8%;
+    top:-34%;
+}
+
+.about_text p
+{
+    color :#525ab6;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    font-size: clamp(14px, 2vw, 22px);
+    line-height: 1.25;
+    margin:0 0 6px 0;
+}
+
+.hidden
+{
+    display : none;
+}
+
+
+.dressup_window
+{ 
+    position:absolute;
+    top: clamp(20px, 4vh, 45px);
+    left: clamp(160px, 20vw, 350px);
+    width: min(64vw, 960px);
+    aspect-ratio: 4 / 3;
+    border:1px solid #525ab6;
+    z-index:10;
+    overflow:hidden;
+}
+
+.dressup_popup
+{
+    display:block;
+    width:100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.game_frame
+{
+    position:absolute;
+    left: 2%;
+    top: 7%;
+    width: 96%;
+    height: 90%;
+    border:none;
+    overflow:hidden;
+}
+
+
+.dressup_icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+
+    width : 100px;
+    margin-bottom: 20px;
+
+    background: none;
+    border : none;
+    cursor : pointer;
+
+    font-family: 'Play', sans-serif;
+    color:#525ab6; 
+}
+
+.dressup_icon span
+{
+       display: block;
+       margin-top: 6px;
+       font-size: 17px;
+}
+
+.dressup_icon_area
+{
+    min-height: calc(100vh-60px);
+    padding:30px;
+    margin-top:-60px !important;
+    margin-left:130px;
+    text-align: left;
+}
+
+.contact-popup
+{
+    position:absolute;
+
+    bottom: clamp(80px, 15vh, 150px);
+    right: clamp(80px, 21vw, 400px);
+
+    width: min(500px, 78vw);
+
+    border:1px solid #525ab6;
+    z-index:10;
+    overflow:hidden;
+}
+
+.contact_popup
+{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.contact_text p
+{
+    position:absolute;
+    color :#525ab6;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.25;
+    margin:0 0 6px 0;
+}
+
+.aboutme_icon
+{
+    width:140%;
+}

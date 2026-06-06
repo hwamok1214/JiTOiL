@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JiTOiL_MiniGAME</title>
+        <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href ="style.css">
+    </head>
+    <body>
+        
+        <div class="dressup_icon" id= "dressup_icon">
+            <div class="dressup_icon_area" id="dressup_icon_area">
+                <button class = "dressup_icon" onclick="openWindow('dressupwindow')">
+                    <img src="dressup_icon.png" alt="DressUpGame">
+                    <span>Dress Up</span>
+            </div>
+        </div>
+
+        <div class="dressup_window hidden" id="dressupwindow">
+            <img class="dressup_popup" src="dressup_window.png" alt="dressup_window">
+            <button class="popup-close" onclick="closeWindow('dressupwindow')">X</button>
+            <iframe src="dressup_game.html" class="game_frame">
+            </iframe>
+        </div>
+        
+        <script>
+            function openWindow(id)
+            {
+                document.getElementById(id).classList.remove("hidden");
+            }
+            function closeWindow(id)
+            {
+                document.getElementById(id).classList.add("hidden");
+                const windowElement = document.getElementById(id);
+                windowElement.classList.add("hidden");
+                const iframe = windowElement.querySelector("iframe");
+                iframe.src = iframe.src;
+            }
+        </script>
+
+    </body>
+</html>
