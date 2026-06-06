@@ -290,14 +290,21 @@ nav a.nav-current
     height:auto;
 }
 
-.contact_text p
+.contact_text
 {
     position:absolute;
-    color :#525ab6;
-    font-family: 'Play', sans-serif;
-    text-align: left;
-    font-size: 22px;
-    line-height: 1.25;
+    top: 57%;
+    left: 10%;
+    right: 10%;
+    color:#525ab6;
+    font-family:'Play', sans-serif;
+    text-align:center;
+}
+
+.contact_text p
+{
+    font-size: clamp(14px, 2vw, 22px);
+    line-height:1.25;
     margin:0 0 6px 0;
 }
 
